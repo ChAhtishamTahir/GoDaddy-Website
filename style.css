@@ -1,0 +1,793 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* ! HEADER  */
+
+header {
+  background-color: black;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  padding-inline: 1.5rem;
+  gap: 0.7rem;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+header i {
+  font-size: 1.5rem;
+}
+header .header_part1 {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 15%;
+}
+header .header_part2 {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* !  Search Bar */
+main {
+  margin-inline: 2rem;
+}
+form .search_bar {
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  height: 4.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.search_bar-Part1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.search_bar-Part2 i {
+  display: none;
+}
+form input {
+  border: transparent;
+  outline: transparent;
+  background-color: transparent;
+  height: 4.2rem;
+  padding: 0.7em;
+  width: 100%;
+  font-size: 1.75rem;
+}
+.search_bar-Part2 button {
+  background-color: #0a8a98;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 1em;
+  color: white;
+  text-wrap: nowrap;
+  border: none;
+}
+.search_bar-Part2 button:hover {
+  background-color: #004249;
+}
+
+/*! HERO SECTION */
+#Hero-Section {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  min-height: max-content;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.Hero-part-1 {
+  background-color: #ded5d5;
+  border-radius: 1.5rem;
+  display: flex;
+}
+.Hero-part-1 .typography {
+  padding: 1rem;
+  width: 60%;
+}
+#Hero-Section p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.Hero-part-1 .typography h1 {
+  line-height: 1.2;
+  font-size: 3rem;
+  margin-block: 1rem;
+  font-family: serif;
+  font-weight: bold;
+}
+.Hero-part-1 .typography p:nth-child(3) {
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.Hero-part-2 {
+  background-color: #fde9db;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+.Hero-part-2 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.Hero-part-2 h1 {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.button {
+  padding: 0.6em;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  width: 170px;
+  height: 50px;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
+.button2.button2 {
+  color: white;
+}
+.button:hover {
+  transform: scale(1.03);
+  transition: all 0.2s ease-in;
+}
+
+/* ! Business Section */
+.headings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headings .button_container {
+  display: flex;
+  gap: 0.7rem;
+}
+.Round_Button {
+  border-radius: 1rem;
+  padding: 0.4em;
+  font-size: 1rem;
+  border: 2px solid gray;
+  font-weight: 600;
+  background-color: #fff;
+}
+.Round_Button:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  border: 2px solid black;
+}
+.Round_Button:focus {
+  background-color: black;
+  color: white;
+  border: none;
+}
+/* ? Domain + WordpressANDsecurity */
+.domain,
+.WordpressANDsecurity {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+.domain i,.Recommended i,.WordpressANDsecurity i{
+  display: none;
+}
+.domain_leftPart,
+.WordpressANDsecurity .leftPart {
+  background-color: #d9eeec;
+  flex: 1;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+}
+.domain_leftPart .images {
+  position: relative;
+}
+.domain_leftPart .images img:first-child {
+  position: relative;
+  left: 134px;
+  top: 1px;
+}
+.domain_leftPart .images img:last-child {
+  width: 40%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 0.5rem;
+  left: 288px;
+  top: 75px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.typography {
+  margin-top: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.domain_RightPart,
+.WordpressANDsecurity .RightPart {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #f0f1ea;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.domain_RightPart img,
+.WordpressANDsecurity .rightpart img {
+  width: 65%;
+  margin-left: 9.4rem;
+}
+.domain_leftPart:hover,
+.domain_RightPart:hover,
+.WordpressANDsecurity .leftPart:hover,
+.WordpressANDsecurity .RightPart:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ? Recommended */
+
+.Recommended {
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+  margin-bottom: 1rem;
+  gap: 1rem;
+  padding: 0.1px;
+  display: none;
+}
+.Recommended .left-part {
+  background-color: #f1e6e3;
+  border-radius: 1rem;
+  grid-row: 1/2;
+  padding: 1rem;
+}
+.Recommended .left-part img {
+  width: 100%;
+}
+.Recommended .left-part .typography p {
+  margin-top: -1rem;
+}
+.Recommended .right-part .top-part {
+  background-color: #cfdfec;
+  display: flex;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+.Recommended .right-part .bottom-part {
+  background-color: #e4ebe9;
+  display: flex;
+  padding: 2rem;
+  border-radius: 0.7rem;
+}
+.Recommended .right-part img {
+  width: 50%;
+}
+.Recommended .left-part:hover,
+.Recommended .right-part .top-part:hover,
+.Recommended .right-part .bottom-part:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/* ? WordPress and Security */
+.WordpressANDsecurity {
+  display: none;
+}
+.WordpressANDsecurity .leftPart,
+.WordpressANDsecurity .RightPart {
+  background-color: #e6f2ee;
+  word-break: initial;
+}
+.WordpressANDsecurity .leftPart img,
+.WordpressANDsecurity .RightPart img {
+  width: 100%;
+}
+.WordpressANDsecurity .RightPart .typography {
+  margin-top: 6rem;
+}
+
+/* ! Marketing */
+
+.Marketing {
+  display: flex;
+  margin-block: 3rem;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+.Marketing > h1 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+.three-cards {
+  display: flex;
+  gap: 1rem;
+}
+.first-card,
+.second-card,
+.third-card {
+  background-color: #e8eaeb;
+  border-radius: 0.7rem;
+  gap: 2rem;
+  min-height: 20vw;
+  padding: 0.7rem;
+}
+.first-card:hover,
+.second-card:hover,
+.third-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+.first-card h1,
+.second-card h1,
+.third-card h1 {
+  margin-block: 1rem;
+  font-size: 1.6rem;
+}
+.first-card p,
+.second-card p,
+.third-card p {
+  font-weight: 600;
+}
+.Marketing a {
+  margin-inline: auto;
+  margin-top: 1.2rem;
+}
+
+/* ! Customer */
+
+.customer .container .img {
+  margin-block: 1.2rem;
+  width: 103%;
+  border-radius: 1.5rem;
+  min-height: 51vw;
+}
+.customer .container img:nth-child(2) {
+  display: none;
+}
+.customer .container .box {
+  width: 50%;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  position: absolute;
+  left: 540px;
+  top: 2217px;
+}
+.customer .container .box .bottom-part img {
+  width: 70%;
+  margin-left: 5.3rem;
+}
+.customer .container .box .bottom-part {
+  display: flex;
+  margin-top: 7rem;
+  margin-bottom: 0.8rem;
+  align-items: center;
+}
+.customer .container .box .bottom-part .left {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+.customer .container .box .bottom-part .left span {
+  font-weight: 600;
+}
+
+/* ! Customer Review */
+
+.customer-review .review-container .left-part img,
+.customer-review .review-container .right-part img {
+  width: 30%;
+  mix-blend-mode: color-burn;
+  margin-top: -3rem;
+  margin-left: -1rem;
+}
+.customer-review .review-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.customer-review .review-container .left-part,
+.customer-review .review-container .right-part {
+  background-color: #e8eaeb;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.customer-review .review-container .right-part p:first-child {
+  margin-bottom: 1rem;
+}
+.customer-review .review-container .left-part h4,
+.customer-review .review-container .right-part h4 {
+  margin-bottom: 7rem;
+  margin-top: -2rem;
+}
+.trustpilot-review img {
+  width: 15%;
+}
+.trustpilot-review {
+  margin-bottom: 1rem;
+}
+.trustpilot-review p {
+  margin-bottom: 0.3rem;
+}
+
+/* ! Godaddy guides */
+.Godaddy-Guides {
+  background-color: #e0e9f6;
+  display: flex;
+  margin-bottom: 1.7rem;
+  margin-top: 3rem;
+}
+.Godaddy-Guides .left-part img {
+  width: 100%;
+}
+.Godaddy-Guides .right-part .logo {
+  display: flex;
+  align-items: center;
+}
+.Godaddy-Guides .right-part .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 1.2rem;
+}
+.Godaddy-Guides .right-part {
+  padding: 0.7rem;
+}
+.Godaddy-Guides .right-part .content h1 {
+  font-size: 4rem;
+  margin-top: -2rem;
+}
+.Godaddy-Guides .right-part .logo span {
+  font-weight: 600;
+}
+.Godaddy-Guides .right-part .logo img {
+  mix-blend-mode: darken;
+  width: 15%;
+}
+.Godaddy-Guides a {
+  margin-block: 2rem;
+}
+.disclaimer {
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+}
+.disclaimer p:first-child {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* ! Footer */
+
+footer .top-part {
+  background-color: #2b2b2b;
+  display: flex;
+  padding-inline: 1rem;
+  font-size: large;
+  align-items: center;
+  margin-bottom: 0.04rem;
+}
+footer .top-part .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+footer .top-part .logo p {
+  color: white;
+  opacity: 0.7;
+}
+footer .top-part .logo img {
+  width: 15%;
+  mix-blend-mode: darken;
+}
+footer .upper-middle {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  margin-bottom: 0.04rem;
+}
+footer .middle {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+footer .middle .top-part {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  gap: 4.2rem;
+  padding-block: 1.5rem;
+}
+footer  a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.shopping,
+.account,
+.partner-programs,
+.resources,
+.support,
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    gap: 1.5rem;
+}
+footer .middle .bottom-part {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  margin-top: -1.8rem;
+  padding-inline: 1.3rem;
+  margin-bottom: .1rem;
+}
+footer .middle .bottom-part .logo {
+  display: flex;
+  align-items: center;
+}
+footer .middle .bottom-part .logo img {
+  width: 15%;
+}
+footer .middle .bottom-part .links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  opacity: 0.7;
+}
+footer .middle .bottom-part .links i{
+  font-size: 1.2rem;
+}
+footer .middle .bottom-part .links a:hover{
+text-decoration: none;
+}
+
+footer .bottom{
+  display: flex;
+  gap: 1.2rem;
+  background-color: black;
+  padding: 1rem;
+  color: white;
+  margin-bottom: .1rem;
+}
+footer .bottom .left-part p:first-child{
+  margin-bottom: 1rem;
+}
+footer .bottom .left-part,footer .bottom .right-part{
+  font-size: .9rem;
+  line-height: 1.6;
+}
+footer .bottom .right-part{
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+/* ! Media Queries */
+/* For Mobile and Tablet  */
+@media (width < 991px) {
+  header .logo h2 {
+    display: none;
+  }
+  header .logo img {
+    width: 25%;
+  }
+  .search_bar .search_bar-Part1 i,
+  .search_bar .search_bar-Part2 button {
+    display: none;
+  }
+  .search_bar .search_bar-Part2 i {
+    display: block;
+    font-size: 2rem;
+  }
+  .search_bar input {
+    font-size: 1.2rem;
+  }
+  /* Hero Section */
+  #Hero-Section {
+    flex-direction: column;
+    /* background-color: ; */
+  }
+  #Hero-Section .Hero-part-1 {
+    min-height: 50vh;
+    background-color: rgba(231, 242, 215, 0.643);
+  }
+  main {
+    margin-inline: 1rem;
+  }
+
+  /* Business Section  */
+  .domain,
+  .WordpressANDsecurity {
+    flex-direction: column;
+  }
+
+  .domain .domain_leftPart,
+  .domain .domain_RightPart,
+  .WordpressANDsecurity .leftPart,
+  .WordpressANDsecurity .RightPart {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .domain .domain_leftPart img,
+  .domain .domain_RightPart img,
+  .WordpressANDsecurity .leftPart img,
+  .WordpressANDsecurity .RightPart img {
+    width: 55%;
+  }
+  .domain .typography p,
+  .WordpressANDsecurity .typography p,
+  .domain .typography a,
+  .WordpressANDsecurity .typography a,
+  .Recommended .typography p,
+  .Recommended a {
+    display: none;
+  }
+  .domain .typography h1,
+  .WordpressANDsecurity .typography h1 {
+    font-size: 1rem;
+  }
+  .domain .domain_leftPart img,
+  .domain .domain_RightPart img {
+    width: 40%;
+  }
+  .WordpressANDsecurity .RightPart .typography h1 {
+    margin-top: -4rem;
+  }
+  .domain .domain_leftPart img {
+    margin-left: -0.4rem;
+  }
+  .domain .domain_leftPart img:last-child {
+    display: none;
+  }
+  .Recommended .left-part {
+    margin-right: 2rem;
+  }
+  .Recommended .left-part {
+    grid-row: 1/1;
+    grid-column: 1/3;
+  }
+  .Recommended .right-part {
+    display: flex;
+    gap: 0.3rem;
+  }
+  .Recommended .right-part .bottom-part {
+    height: 12rem;
+  }
+  .Recommended .right-part img {
+    display: none;
+  }
+  .domain i,.Recommended i,.WordpressANDsecurity i{
+    display:unset;
+  }
+
+  /*! Marketing */
+
+  .second-card,
+  .third-card {
+    display: none;
+  }
+
+  /* ! Customers */
+
+  .customer .container .img {
+    display: none;
+  }
+  .customer .container img:nth-child(2) {
+    display: inline;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
+  .customer .container .box {
+    position: unset;
+    margin-block: 1rem;
+    background-color: #e8eaeb;
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+  .customer .container .box .bottom-part {
+    margin-top: 1.3rem;
+  }
+  .customer .container .box .bottom-part img {
+    display: none;
+  }
+  .customer .container .box .content h1 {
+    font-size: 1rem;
+  }
+  /* ! Customer Review */
+
+  .customer-review .review-container {
+    flex-direction: column;
+  }
+  .customer-review .review-container .left-part,
+  .customer-review .review-container .right-part {
+    gap: 1rem;
+  }
+  .customer-review .review-container .left-part p:first-child {
+    margin-bottom: 1rem;
+  }
+  .trustpilot-review img {
+    width: 30%;
+  }
+  /* ! Godaddy Guides */
+  .Godaddy-Guides {
+    flex-direction: column;
+    background-color: #fff;
+    margin-inline: 1rem;
+  }
+  /* ! Footer */
+  footer>.top-part{
+    display: none;
+  }
+  footer .middle .top-part{
+    flex-direction: column;
+  } 
+   footer .middle .bottom-part{
+    flex-direction: column;
+  }
+  footer .middle .bottom-part .links{
+    margin-bottom: .5rem;
+  }
+  footer .bottom{
+    flex-direction: column-reverse;
+    padding: 1.3rem;
+  }
+}
+/* For Tablet Only */
+@media (991px > width >767px) {
+  header .logo h2 {
+    display: block;
+  }
+  header .logo img {
+    width: 20%;
+  }
+}
