@@ -619,6 +619,9 @@ footer .bottom .right-part{
   align-items: start;
   gap: 1rem;
 }
+::selection{
+  background-color: #A6FFF8;
+}
 /* ! Media Queries */
 /* For Mobile and Tablet  */
 @media (width < 991px) {
