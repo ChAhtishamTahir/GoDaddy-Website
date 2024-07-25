@@ -378,19 +378,24 @@ form input {
   width: 100%;
   border-radius: 1.5rem;
   min-height: 51vw;
-  position: relative;
+  /* position: relative; */
 }
 .customer .container img:nth-child(2) {
   display: none;
 }
+.customer .container{
+  position: relative;
+  min-height: 36rem;
+}
 .customer .container .box {
-  width: 50%;
+  max-width: 45%;
   background-color: white;
   border-radius: 1rem;
   padding: 1rem;
+  max-height: 80%;
   position: absolute;
-  left: 490px;
-  top: 2217px;
+  left: 46%;
+  top: 10%;
 }
 .customer .container .box .bottom-part img {
   width: 70%;
@@ -733,7 +738,7 @@ footer .bottom .right-part{
     position: unset;
     margin-block: 1rem;
     background-color: #e8eaeb;
-    width: 100%;
+    min-width: 100%;
     padding-bottom: 5rem;
   }
   .customer .container .box .bottom-part {
@@ -792,11 +797,11 @@ footer .bottom .right-part{
   header .logo img {
     width: 20%;
   }
-}
-/* For TV Screens */
-/* @media (min-width:991px){
-  header{
-    min-width: 100%;
- 
-  } */
+  .domain .domain_leftPart img{
+    width: 70%;
+  }
+  .domain .domain_leftPart .images{
+    width: 50%;
+  }
 
+}
